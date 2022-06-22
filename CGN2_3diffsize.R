@@ -246,10 +246,10 @@ delmin<-function(z){
 # sizes.
 ################################################################################
 
-# D=1: Block of three different sizes with one set of k2
-# D=2: Block of three different sizes with two set of k2
-# D=3: Block of three different sizes with one set of k2 and one set of k3
-# D=4: Block of three different sizes with two set of k2 and one set of k3
+# D=1: Block of three different sizes with one set of k2 and one of k3
+# D=2: Block of three different sizes with two set of k2 and one of k3
+# D=3: Block of three different sizes with one set of k2 and two set of k3
+# D=4: Block of three different sizes with two set of k2 and two set of k3
 
 #   K: Vector of three different block sizes 
 #   i: Number of sets of shifts for K1

@@ -91,7 +91,6 @@ delmin<-function(z){
 # Selection of adjusted A and the set(s) of shifts to obtain Circular 
 # Generalized neighbor design for block of equal size.
 ################################################################################
-
 #   K: Block sizes
 #   i: Number of set of shifts for K
 
