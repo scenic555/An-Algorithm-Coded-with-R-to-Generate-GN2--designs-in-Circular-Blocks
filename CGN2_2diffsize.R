@@ -258,7 +258,7 @@ if(m%%8==1){
 if(m%%8==2){
   j=(m-2)/8
   if(j<1) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(m+1),(2*m-5*j-1));A=A[-(5*j+2)]
+  A=c(1:(m-1),(m+1),(2*m-5*j-1));A=A[-(5*j+2)]
   A1<-grouping(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K1","K2")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)

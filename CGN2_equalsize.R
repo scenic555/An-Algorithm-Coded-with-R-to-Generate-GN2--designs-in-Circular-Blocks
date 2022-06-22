@@ -125,7 +125,7 @@ v=2*i*k-2; m=(v-2)/2
 if(m%%8==0){
   j=m/8
   if(j<1) {return("Conditions are not satisfied for CGN2")}
-   A=c(1:(j-1),(j+1):m,(2*m-j+1))
+  A=c(1:m,(2*m-j+1));A=A[-(j)]
    A1<-grouping1(A,k,(v-1),i)
    A2<-c(v,k);names(A2)<-c("V","K")
    x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -134,7 +134,7 @@ if(m%%8==0){
 if(m%%8==1){
   j=(m-1)/8
   if(j<1) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(3*j),(3*j+2):(m-1),(m+1),(2*m-3*j))
+  A=c(1:(m-1),(m+1),(2*m-3*j));A=A[-(3*j+1)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -143,7 +143,7 @@ if(m%%8==1){
 if(m%%8==2){
   j=(m-2)/8
   if(j<1) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(5*j+1),(5*j+3):(m-1),(m+1),(2*m-5*j-1))
+  A=c(1:(m-1),(m+1),(2*m-5*j-1));A=A[-(5*j+2)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -152,7 +152,7 @@ if(m%%8==2){
 if(m%%8==3){
   j=(m-3)/8
   if(j<0) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(m-j-1),(m-j+1):m,(m+j+1))
+  A=c(1:m,(m+j+1));A=A[-(m-j)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -162,7 +162,7 @@ if(m%%8==3){
 if(m%%8==4){
   j=(m-4)/8
   if(j<0) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:j,(j+2):(m-1),(m+1),(2*m-j))
+  A=c(1:(m-1),(m+1),(2*m-j));A=A[-(j+1)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -171,7 +171,7 @@ if(m%%8==4){
 if(m%%8==5){
   j=(m-5)/8
   if(j<0) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(3*j+1),(3*j+3):(m),(2*m-3*j-1))
+  A=c(1:m,(2*m-3*j-1));A=A[-(3*j+2)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -180,7 +180,7 @@ if(m%%8==5){
 if(m%%8==6){
   j=(m-6)/8
   if(j<0) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(5*j+3),(5*j+5):(m),(2*m-5*j-3))
+  A=c(1:m,(2*m-5*j-3));A=A[-(5*j+4)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
@@ -189,7 +189,7 @@ if(m%%8==6){
 if(m%%8==7){
   j=(m-7)/8
   if(j<1) {return("Conditions are not satisfied for CGN2")}
-  A=c(1:(m-j-1),(m-j+1):(m-1),(m+1),(m+j+1))
+  A=c(1:(m-1),(m+1),(m+j+1));A=A[-(m-j)]
   A1<-grouping1(A,k,v=(v-1),i)
   A2<-c(v,k);names(A2)<-c("V","K")
   x<-list(S=A1$B1,G=A1$B2,R=A2,A=A)
