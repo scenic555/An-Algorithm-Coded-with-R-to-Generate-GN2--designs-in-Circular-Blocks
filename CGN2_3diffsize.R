@@ -247,7 +247,7 @@ delmin<-function(z){
 ################################################################################
 
 # D=1: Block of three different sizes with one set of k2 and one of k3
-# D=2: Block of three different sizes with two set of k2 and one of k3
+# D=2: Block of three different sizes with two set of k2 and one of k3 
 # D=3: Block of three different sizes with one set of k2 and two set of k3
 # D=4: Block of three different sizes with two set of k2 and two set of k3
 
