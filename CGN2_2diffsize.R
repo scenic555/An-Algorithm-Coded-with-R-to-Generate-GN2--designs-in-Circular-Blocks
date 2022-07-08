@@ -7,8 +7,8 @@
 # Algorithm from paper:
 
 # Hurria Ali, Jamshaid ul Hassan, Khadija Noreen, Muhammad Sajid Rashid,
-# Mahmood Ul Hassan and Rashid Ahmed (2022). Efficient Balanced and Strongly 
-# Balanced Neighbor Designs through Circular GN2 -designs Generated with R. 
+# Mahmood Ul Hassan and Rashid Ahmed (2022). An Algorithm Coded with R to 
+# Generate GN2 -designs in Circular Blocks. 
 
 
 # Coded by Ali et al., 01-03-2022 to 05-07-2022
